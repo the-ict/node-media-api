@@ -31,4 +31,4 @@ mongoose.connect(process.env.MONGO_URL)
     .catch(err => console.log(err))
 
 // start express application
-app.listen(process.env.PORT, () => console.log("Backend is running!"))
+app.listen(process.env.PORT || 3000, () => console.log("Backend is running!"))
